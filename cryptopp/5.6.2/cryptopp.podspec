@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
                 DESC
 
 
-  s.source   = { :git => 'https://github.com/debris/cryptopp-ios', :commit => '84ce6f0a4f173085ebe1e1cde858bd11c2b61530'}
+  s.source   = { :git => 'https://github.com/debris/cryptopp-ios', :commit => '31b8f942ff6660b638e01bbeb2e80e97ba523562'}
   s.source_files = 'cryptopp/*.{h}'
   s.library = 'c++', 'cryptopp'
   s.preserve_paths = 'cryptopp/bin/libcryptopp.a'
 
   s.platform = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '6.0'
 
   s.prepare_command = <<-CMD
     pwd
